@@ -9,11 +9,11 @@
 import Foundation
 import SceneKit
 
-extension simd_float4x4 {
+public extension simd_float4x4 {
   var inverse: simd_float4x4 {
     return simd_inverse(self)
   }
-  
+
   var position: simd_float3 {
     return simd_float3(x: columns.3.x, y: columns.3.y, z: columns.3.z)
   }

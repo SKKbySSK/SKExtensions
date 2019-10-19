@@ -9,11 +9,11 @@
 import Foundation
 import SceneKit
 
-extension simd_quatf {
+public extension simd_quatf {
   var inverse: simd_quatf {
     return simd_inverse(self)
   }
-  
+
   var matrix: simd_float4x4 {
     return simd_float4x4(self)
   }

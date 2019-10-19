@@ -9,7 +9,7 @@
 import Foundation
 import SceneKit
 
-extension SIMD3 where Scalar == Float {
+public extension SIMD3 where Scalar == Float {
   var matrix: simd_float4x4 {
     return simd_float4x4([
       SIMD4(1, 0, 0, x),
