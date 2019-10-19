@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for SKExtensions.
-FOUNDATION_EXPORT double SKExtensionsVersionNumber;
+FOUNDATION_EXPORT double SceneKitExtensionsVersionNumber;
 
 //! Project version string for SKExtensions.
-FOUNDATION_EXPORT const unsigned char SKExtensionsVersionString[];
+FOUNDATION_EXPORT const unsigned char SceneKitExtensionsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SKExtensions/PublicHeader.h>
 
