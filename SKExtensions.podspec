@@ -15,10 +15,11 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SKExtensions"
-  spec.version      = "0.0.1"
-  spec.summary      = "Useful SceneKit Extensions"
-  spec.homepage     = "https://github.com/SKKbySSK/SKExtensions"
+  spec.name           = "SKExtensions"
+  spec.version        = "0.0.1"
+  spec.summary        = "Useful SceneKit Extensions"
+  spec.homepage       = "https://github.com/SKKbySSK/SKExtensions"
+  spec.swift_versions = '5.0'
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -48,7 +49,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
+  spec.platform     = :ios, "9.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
