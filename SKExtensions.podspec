@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name           = "SKExtensions"
+  spec.name           = "SceneKit Extensions"
   spec.version        = "0.0.1"
-  spec.summary        = "Useful SceneKit Extensions"
+  spec.summary        = "Add useful extensions such as converting matrix to quaternion"
   spec.homepage       = "https://github.com/SKKbySSK/SKExtensions"
   spec.swift_versions = '5.0'
 
