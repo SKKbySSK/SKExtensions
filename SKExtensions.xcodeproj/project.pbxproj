@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		73A3AE33235B34D200938601 /* SKExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A3AE31235B34D200938601 /* SKExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73A3AE3B235B34FC00938601 /* simd_float4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3AE3A235B34FC00938601 /* simd_float4x4.swift */; };
+		73A3AE3D235B358C00938601 /* SIMD3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3AE3C235B358C00938601 /* SIMD3.swift */; };
+		73A3AE3F235B368A00938601 /* simd_quatf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3AE3E235B368A00938601 /* simd_quatf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73A3AE2E235B34D200938601 /* SKExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A3AE31235B34D200938601 /* SKExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKExtensions.h; sourceTree = "<group>"; };
 		73A3AE32235B34D200938601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73A3AE3A235B34FC00938601 /* simd_float4x4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = simd_float4x4.swift; sourceTree = "<group>"; };
+		73A3AE3C235B358C00938601 /* SIMD3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMD3.swift; sourceTree = "<group>"; };
+		73A3AE3E235B368A00938601 /* simd_quatf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simd_quatf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		73A3AE30235B34D200938601 /* SKExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				73A3AE39235B34E800938601 /* Extensions */,
 				73A3AE31235B34D200938601 /* SKExtensions.h */,
 				73A3AE32235B34D200938601 /* Info.plist */,
 			);
 			path = SKExtensions;
+			sourceTree = "<group>";
+		};
+		73A3AE39235B34E800938601 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73A3AE3A235B34FC00938601 /* simd_float4x4.swift */,
+				73A3AE3E235B368A00938601 /* simd_quatf.swift */,
+				73A3AE3C235B358C00938601 /* SIMD3.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +112,7 @@
 				TargetAttributes = {
 					73A3AE2D235B34D200938601 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A3AE3F235B368A00938601 /* simd_quatf.swift in Sources */,
+				73A3AE3D235B358C00938601 /* SIMD3.swift in Sources */,
+				73A3AE3B235B34FC00938601 /* simd_float4x4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 		73A3AE37235B34D200938601 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 24GETZ4LG8;
@@ -276,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = work.ksprogram.SKExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +307,7 @@
 		73A3AE38235B34D200938601 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 24GETZ4LG8;
